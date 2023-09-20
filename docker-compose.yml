@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nextjs-app:
+    container_name: nextjs-container
+    image: node:18-alpine # Replace with the desired Node.js version
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "3000:3000" # Adjust the port if needed
+    environment:
+      - NODE_ENV=development
+    command: sh -c "yarn && yarn build && yarn dev"
