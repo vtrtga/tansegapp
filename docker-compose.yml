@@ -8,6 +8,4 @@ services:
       - ./:/app
     ports:
       - "3000:3000" # Adjust the port if needed
-    environment:
-      - NODE_ENV=development
     command: sh -c "yarn && yarn build && yarn dev"
