@@ -1,10 +1,17 @@
+import classNames from "classnames";
 import { NavbarItensProps } from "./NavbarTypes";
 
-function NavbarItems({ children }: NavbarItensProps) {
+function NavbarItems({ className, items }: NavbarItensProps) {
     return (
-        <>
-            {children}
-        </>
+        <div className="nav-list h-full">
+            <ul className="list-none nav-list inline-block">
+                {items.map((item, i) => (
+                    <li key={i} className={classNames(className, "nav-items block")}>
+                        <a className="item-link" href={item.url}>{item.title}</a>
+                    </li>
+                ))}
+            </ul>
+        </div>
     )
 }
 

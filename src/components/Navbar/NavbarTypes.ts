@@ -1,8 +1,10 @@
+import React from "react";
+
 export interface NavbarStyles {
-    parentDiv?: string;
+    className?: string;
     imageHeight?: string;
     imageWidth?: string;
-    backgroundColor?: string;
+    backgroundImage?: string;
 }
 
 export type Item = {
@@ -11,15 +13,12 @@ export type Item = {
 }
 
 export interface NavbarProps {
-    items: React.ReactNode;
+    items: Item[];
     className?: string;
 }
 
 export interface NavbarItensProps {
-    children: React.ReactNode;
+    items: Item[];
+    className?: string;
 }
  
-export interface useNavBarProps {
-    items: Item[];
-    classNames: string;
-}

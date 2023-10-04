@@ -1,18 +1,17 @@
-import classNames from 'classnames';
-import NavbarWave from '../../images/NavbarWave';
-import styles from "./NavbarClasses"
-import { NavbarProps } from './NavbarTypes';
-import NavbarItems from './NavbarItems';
 
-function Navbar({ className, items }: NavbarProps) {
+import "./Navbar.css";
+import classNames from 'classnames';
+import { navbarStyles } from "./NavbarClasses"
+import { NavbarProps } from './NavbarTypes';
+import HamburguerMenu from "./HamburguerMenu";
+
+function Navbar({ className }: NavbarProps) {
+    const { backgroundImage } = navbarStyles;
     return(
-        <div 
-        className={classNames(className, styles.parentDiv, styles.backgroundColor)} >
-            <NavbarWave className={styles} />
-            <NavbarItems>
-                {items}
-            </NavbarItems>
-        </div>
+        <nav 
+        className={classNames(className, backgroundImage)} >
+            <HamburguerMenu />
+        </nav>
     )
 }
 

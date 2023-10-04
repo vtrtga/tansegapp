@@ -1,17 +1,17 @@
 import Navbar from '@/components/Navbar/Navbar';
-import useNavbar from '@/components/Navbar/useNavbar';
+import Section from '@/components/Section/Section';
 import { navItens } from '@/contents/NavbarContents';
 import React from 'react';
 
 function TansegLayout() {
-    const { buildNavItems } = useNavbar({
-        items: navItens,
-        classNames: "nav-item"
-    })
     return(
         <div className="main-layout">
-
-            <Navbar items={buildNavItems}  className="b-1"/>
+            <Navbar items={navItens}  className="flex"/>
+            <Section />
+            <Section />
+            <Section />
+            <Section />
+            <Section />
         </div>
     )
 }

@@ -1,11 +1,14 @@
 import { NavbarStyles } from "./NavbarTypes";
 
 
-const styles: NavbarStyles = {
-    parentDiv: "layout-Navbar w-full",
-    imageHeight: "w-full",
-    imageWidth: "w-full",
-    backgroundColor: "bg-indigo"
+const navbarStyles: NavbarStyles = {
+    className: "border-gray-200 bg-no-repeat w-full bg-cover h-10 flex center",
+    backgroundImage: "bg-navbar-wave"
 }
 
-export default styles;
+const navbarItensStyles = ""
+
+export {
+    navbarItensStyles,
+    navbarStyles
+};
