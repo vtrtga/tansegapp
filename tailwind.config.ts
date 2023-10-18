@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-       'navbar-wave': "url('../images/NavbarWave.svg')"
+       'navbar-wave': "url('../images/NavbarWave.svg')",
       },
     },
     colors: {

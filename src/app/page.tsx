@@ -1,10 +1,29 @@
-import React from "react"
-import TansegLayout from "@/pages/app"
+import Section from "@/components/Section/Section";
+import { NextPageWithLayout } from "./pages/_app";
+import { ReactElement } from "react";
+import TansegLayout from "@/components/Layout/layout";
 
-export default function Home() {
-  return (
-    <main>
-      <TansegLayout />
-    </main>
-  )
+const Home: NextPageWithLayout = () => {
+    return (
+        <>
+        <TansegLayout>
+            <div>
+                <Section />
+                <Section />
+                <Section />
+                <Section />
+            </div>
+        </TansegLayout>
+        </>
+    )
 }
+
+Home.getLayout = function getLayout(page: ReactElement) {
+    return (
+        <TansegLayout>
+            {page}
+        </TansegLayout>
+    )
+}
+
+export default Home;

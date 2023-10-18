@@ -1,11 +1,13 @@
 import { SyntheticEvent } from "react";
 
 export interface Styles {
-    backgroundColor: string;
+    backgroundColor?: string;
 }
 
 export interface ButtonProps {
-    className: string;
-    onClick: (e: SyntheticEvent) => void;
-    styles: Styles;
+    children?: React.ReactNode;
+    className?: string;
+    onClick?: (e: SyntheticEvent) => void;
+    styles?: Styles;
+    backgroundImage?: string;
 }
