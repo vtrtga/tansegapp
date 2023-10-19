@@ -7,7 +7,6 @@ function Button({ className, onClick, backgroundImage, children }: ButtonProps) 
         <button
             className={classNames(
                 className,
-                "bg-transparent border-transparent",
                 )}
             onClick={onClick}
         >
