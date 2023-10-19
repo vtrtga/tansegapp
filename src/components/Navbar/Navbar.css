@@ -20,7 +20,7 @@
 }
 
 .btnMenu {
-    display: flexa;
+    display: flex;
     justify-content: center;
     width: 2.5rem;
     height: 2rem;
