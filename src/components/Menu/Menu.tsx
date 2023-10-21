@@ -8,7 +8,7 @@ interface MenuProps {
 
 function Menu({ children, className, isOpen }: MenuProps) {
     return(
-        <div className={classNames("menuHidden", className, { "menuOpen": isOpen } )}>
+        <div className={classNames({ "menuHidden": !isOpen }, className, { "menuOpen": isOpen } )}>
             {children}
         </div>
     )
