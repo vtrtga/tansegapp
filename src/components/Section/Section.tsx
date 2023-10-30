@@ -1,9 +1,9 @@
 import lorem from "@/lorem";
 
-function Section() {
+function Section({style}: any) {
     return(
         <div>
-            <section>
+            <section style={style}>
                 {
                     lorem
                 }

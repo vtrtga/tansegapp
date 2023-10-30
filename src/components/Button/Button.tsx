@@ -1,8 +1,7 @@
 import { ButtonProps } from "./ButtonTypes";
 import classNames from 'classnames'
 
-function Button({ className, onClick, backgroundImage, children }: ButtonProps) {
-    console.log(backgroundImage)
+function Button({ className, onClick, children }: ButtonProps) {
     return (
         <button
             className={classNames(

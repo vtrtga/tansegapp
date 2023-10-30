@@ -11,7 +11,6 @@ const Home: NextPageWithLayout = () => {
                 <Section />
                 <Section />
                 <Section />
-                <Section />
             </div>
         </TansegLayout>
         </>

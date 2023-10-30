@@ -1,0 +1,72 @@
+$pacific-cyan: #02A5C8ff;
+$prussian-blue: #03385Eff;
+$moonstone: #01ADC5ff;
+$lapis-lazuli: #005C8Fff;
+$black: #000000ff;
+
+.footer-main {
+    font-size: 14px;
+    position: absolute;
+    flex-direction: row;
+    bottom: 0;
+    z-index: 0;
+    color: white;
+    background-color: $prussian-blue;
+    width: 100%;
+    align-items: center;
+    height: 24rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.footer-item {
+    margin-inline: 3rem;
+    flex: 1 0;
+    border-top: #005C8Fff solid;
+    height: 12rem;
+    width: 20em;
+}
+
+.footer-phone {
+    padding: 0;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+}
+img {
+    width: 30px;
+    height: 28px;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+}
+@media screen and (max-width: 764px) {
+    .footer-main {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        font-size: 8px;
+        max-height: 20%;
+        bottom: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-item {
+        height: 3rem;
+        margin-bottom: 3rem;
+    }
+}

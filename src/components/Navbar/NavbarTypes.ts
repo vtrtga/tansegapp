@@ -20,5 +20,6 @@ export interface NavbarProps {
 export interface NavbarItensProps {
     items: Item[];
     className?: string;
+    onClick: (e: React.SyntheticEvent) => void;
 }
  

@@ -1,14 +1,14 @@
 
-@tailwind components;
-@tailwind base;
-@tailwind utilities;
-@tailwind variants;
-
 body, html {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
     'Arial', sans-serif;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
   height: 100%;
 }
+
+.main {
+  background: linear-gradient(#01ADC5ff, #FFFF 50%);
+}
+

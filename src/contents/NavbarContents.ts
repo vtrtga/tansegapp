@@ -9,5 +9,14 @@ export const navItens: Item[] = [
     },
     {
         title: "Contato"
+    },
+    {
+        title: "Quem somos"
+    },
+    {
+        title: "Formulário de contato"
+    },
+    {
+        title: "Telefones úteis"
     }
 ]
