@@ -5,8 +5,8 @@ $lapis-lazuli: #005C8Fff;
 $black: #000000ff;
 
 .footer-main {
+    position: fixed;
     font-size: 14px;
-    position: absolute;
     flex-direction: row;
     bottom: 0;
     z-index: 0;
@@ -33,7 +33,6 @@ a {
     flex: 1 0;
     border-top: #005C8Fff solid;
     height: 12rem;
-    width: 20em;
 }
 
 .footer-phone {
@@ -53,20 +52,17 @@ img {
     justify-content: center;
     height: 8rem;
 }
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 768px) {
     .footer-main {
-        display: flex;
-        position: relative;
-        flex-direction: column;
+        position: fixed;
+        display: block;
         font-size: 8px;
-        max-height: 20%;
-        bottom: 0;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
     }
 
     .footer-item {
         height: 3rem;
-        margin-bottom: 3rem;
+        margin: 10px;
     }
 }

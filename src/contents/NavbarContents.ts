@@ -5,7 +5,8 @@ export const navItens: Item[] = [
         title: "Início"
     },
     {
-        title: "Produtos"
+        title: "Produtos",
+        url: "products",
     },
     {
         title: "Contato"

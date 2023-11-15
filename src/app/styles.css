@@ -10,5 +10,7 @@ body, html {
 
 .main {
   background: linear-gradient(#01ADC5ff, #FFFF 50%);
+  width: 100%;
 }
+
 
