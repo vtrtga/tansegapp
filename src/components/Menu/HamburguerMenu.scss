@@ -1,0 +1,99 @@
+/* CSS HEX */
+/*
+--blue-green: #00A0D0ff;
+--lapis-lazuli: #00588Dff;
+--black: #000000ff;
+--moonstone: #01ADC5ff;
+--dark-cyan: #0096A1ff;
+*/
+$pacific-cyan: #02A5C8ff;
+$prussian-blue: #03385Eff;
+$moonstone: #01ADC5ff;
+$lapis-lazuli: #005C8Fff;
+$black: #000000ff;
+
+.menuHidden {
+    position: fixed;
+    padding: 0;
+    z-index: 999;
+    transition: all ease-out 0.5s;
+    right: 100%;
+    height: 100%;
+    width: 50%;
+    background-color: #01adc5;
+
+}
+
+.menuOpen {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 999;
+    transition: all 0.5s ease;
+    right: 100%;
+    transform: translate(100%, 0);
+    background-color: $prussian-blue;
+}
+
+.btnMenu {
+    display: none;
+}
+
+
+.menu-list {
+    width: 100%;
+}
+
+.item-title,
+.item-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-icons {
+    margin-left: 4px;
+}
+
+.item-title {
+    padding: 2rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 677px) {
+    .btnMenu {
+        display: flex;
+        width: 2.5rem;
+        margin-right: 0.8rem;
+        height: 2rem;
+        border: 0.5px solid #d4d4d4;
+        border-radius: 0.4rem;
+        background-color: white;
+        transition: ease-in 0.2s;
+    }
+
+    .hamburguer-menu {
+    max-height: 4rem;
+    width: 100%;
+}
+
+@media (max-width: 678px) {
+    .navbar {
+        display: none;
+    }
+    .btnMenu {
+        display: none;
+    }
+}
+}

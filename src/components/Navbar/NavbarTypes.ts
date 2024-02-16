@@ -13,7 +13,7 @@ export type Item = {
 }
 
 export interface NavbarProps {
-    items: Item[];
+    items?: Item[];
     className?: string;
 }
 

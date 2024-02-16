@@ -1,12 +1,12 @@
 "use client"
 
 import React, { useState, useEffect, useRef } from 'react';
-import NavbarItems from './NavbarItems';
 import { navItens } from '@/contents/NavbarContents';
 import Menu from '@/components/Menu/Menu';
 import Button from '../Button/Button';
 import Image from 'next/image';
 import HamburguerIcon from "@/images/HamburguerIcon.svg";
+import "./HamburguerMenu.scss"
 
 function HamburguerMenu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,9 +31,7 @@ function HamburguerMenu() {
     return (
         <>
             <div className='hamburguer-menu' ref={menuRef}>
-                <Menu isOpen={isOpen}>
-                    <NavbarItems onClick={handleOnClick} items={navItens} />
-                </Menu>
+
             </div>
                 <p>
                     <Button

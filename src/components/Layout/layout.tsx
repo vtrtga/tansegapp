@@ -12,7 +12,7 @@ interface TansegLayoutProps {
 function TansegLayout({ children }: TansegLayoutProps) {
     return (
         <main className='main'>
-            <Navbar items={navItens} />
+            <Navbar />
             {children}
             <Footer content={content} />
         </main>

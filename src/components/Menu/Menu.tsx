@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classNames from "classnames";
-import "./Menu.css"
+import "./Menu.scss"
 interface MenuProps {
     className?: string;
     children: React.ReactNode;

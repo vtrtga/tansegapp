@@ -1,21 +1,32 @@
+'use client'
 import "./Navbar.scss";
-import classNames from 'classnames';
 import { NavbarProps } from './NavbarTypes';
-import HamburguerMenu from "./HamburguerMenu";
-import Logo from "@/images/logo.png";
-import Image from "next/image";
+import { Button } from "@mui/material";
 
-function Navbar({ className }: NavbarProps) {
+function Navbar() {
+    const listaItens = [
+        "Início",
+        "Produtos",
+        "Caminhão",
+        "Solicite uma proposta",
+        "Formulário de Contato",
+        "Quem somos",
+        "Exibição da política de privacidade",
+    ];
+
     return (
-        <nav
-            className={classNames(className, "navbar")} >
-                <div>
-
-            <p className="logo-container">
-                <Image src={Logo} className="logo" alt="logo" />
-            </p>
-                </div>
-            <HamburguerMenu />
+        <nav className="navbar">
+            <ul className="navbar-list">
+                {
+                    listaItens.map((item, i) => {
+                        return (
+                            <li className="navbar-list--item" key={i}>
+                                <p>{item}</p>
+                            </li>
+                        )
+                    })
+                }
+            </ul>
         </nav>
     )
 }
